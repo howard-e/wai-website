@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: bundler
+    directory: "/"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "bundler"
+      
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "npm"
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "gh"
