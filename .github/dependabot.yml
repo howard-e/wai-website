@@ -6,6 +6,7 @@ updates:
       interval: monthly
     commit-message:
       prefix: "bundler"
+    open-pull-requests-limit: 99
       
   - package-ecosystem: npm
     directory: "/"
@@ -13,6 +14,7 @@ updates:
       interval: monthly
     commit-message:
       prefix: "npm"
+    open-pull-requests-limit: 99
 
   - package-ecosystem: github-actions
     directory: "/"
@@ -20,3 +22,4 @@ updates:
       interval: monthly
     commit-message:
       prefix: "gh"
+    open-pull-requests-limit: 99
