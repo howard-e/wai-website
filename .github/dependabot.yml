@@ -1,25 +1,25 @@
 version: 2
 updates:
-  - package-ecosystem: bundler
+  - package-ecosystem: "bundler"
     directory: "/"
     schedule:
-      interval: monthly
+      interval: "monthly"
+    open-pull-requests-limit: 10
     commit-message:
-      prefix: "bundler"
-    open-pull-requests-limit: 99
+      prefix: "Infrastructure"
       
-  - package-ecosystem: npm
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: monthly
+      interval: "monthly"
+    open-pull-requests-limit: 10
     commit-message:
-      prefix: "npm"
-    open-pull-requests-limit: 99
+      prefix: "Infrastructure"
 
-  - package-ecosystem: github-actions
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: monthly
+      interval: "monthly"
+    open-pull-requests-limit: 10
     commit-message:
-      prefix: "gh"
-    open-pull-requests-limit: 99
+      prefix: "Infrastructure"
